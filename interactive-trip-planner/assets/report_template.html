@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{report_title}}</title>
+  <style>
+{{styles_inline}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">Interactive Trip Planner</div>
+      <h1>{{report_title}}</h1>
+      <p class="subtitle">{{report_subtitle}}</p>
+      <div class="meta-grid">
+        <div class="meta-card"><div class="meta-label">鍑哄彂鍦?/div><div class="meta-value">{{origin}}</div></div>
+        <div class="meta-card"><div class="meta-label">鏃ユ湡</div><div class="meta-value">{{dates}}</div></div>
+        <div class="meta-card"><div class="meta-label">浜烘暟</div><div class="meta-value">{{party_size}}</div></div>
+        <div class="meta-card"><div class="meta-label">浜ら€氭柟寮?/div><div class="meta-value">{{transport_style}}</div></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>鎺ㄨ崘缁撹</h2>
+      <div class="lead-box">{{recommendation_summary}}</div>
+    </section>
+
+    <section>
+      <h2>瑙勫垝绠€鎶?/h2>
+      {{planning_brief_html}}
+    </section>
+
+    <section>
+      <h2>鏂规瀵规瘮</h2>
+      {{options_html}}
+    </section>
+
+    <section>
+      <h2>鏈€缁堣绋?/h2>
+      {{itinerary_html}}
+    </section>
+
+    <section>
+      <h2>棰勭畻</h2>
+      {{budget_html}}
+    </section>
+
+    <section>
+      <h2>澶囬€夋柟妗?/h2>
+      <div class="card">{{backup_plan_html}}</div>
+    </section>
+
+    <section>
+      <h2>鏉ユ簮</h2>
+      {{sources_html}}
+    </section>
+  </main>
+</body>
+</html>
