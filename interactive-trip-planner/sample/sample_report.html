@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Trip Planning Report</title>
+  <style>
+:root {
+  --bg: #f4f0e8;
+  --paper: #fffdf9;
+  --ink: #1d1a17;
+  --muted: #6b655d;
+  --line: #ddd4c8;
+  --accent: #16544b;
+  --accent-soft: #deece7;
+  --shadow: 0 18px 50px rgba(30, 24, 18, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(180deg, #faf7f1 0%, var(--bg) 100%);
+  font-family: "Microsoft YaHei", "Noto Sans SC", "PingFang SC", sans-serif;
+  line-height: 1.65;
+}
+
+.page {
+  width: min(1080px, calc(100vw - 32px));
+  margin: 24px auto 40px;
+  background: var(--paper);
+  border: 1px solid rgba(107, 101, 93, 0.18);
+  box-shadow: var(--shadow);
+}
+
+.hero, section {
+  padding: 28px 36px;
+}
+
+.hero {
+  border-bottom: 1px solid var(--line);
+}
+
+section + section {
+  border-top: 1px solid var(--line);
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(22, 84, 75, 0.08);
+  color: var(--accent);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0 0 12px;
+}
+
+.subtitle, .meta-label, .muted {
+  color: var(--muted);
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.meta-card, .card, .list-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 14px 16px;
+}
+
+.meta-value {
+  font-weight: 700;
+}
+
+.lead-box {
+  padding: 16px 18px;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+}
+
+ul {
+  margin: 8px 0 0 18px;
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: calc(100vw - 16px);
+    margin: 8px auto 16px;
+  }
+
+  .hero, section {
+    padding: 20px 16px;
+  }
+
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">Interactive Trip Planner</div>
+      <h1>Sample Trip Planning Report</h1>
+      <p class="subtitle">Example output for the interactive-trip-planner scaffold.</p>
+      <div class="meta-grid">
+        <div class="meta-card"><div class="meta-label">鍑哄彂鍦?/div><div class="meta-value">Sydney</div></div>
+        <div class="meta-card"><div class="meta-label">鏃ユ湡</div><div class="meta-value">2026-04-09 to 2026-04-13</div></div>
+        <div class="meta-card"><div class="meta-label">浜烘暟</div><div class="meta-value">2 adults</div></div>
+        <div class="meta-card"><div class="meta-label">浜ら€氭柟寮?/div><div class="meta-value">Flight + self-drive</div></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>鎺ㄨ崘缁撹</h2>
+      <div class="lead-box">Recommend Hobart return with one east coast overnight because it balances logistics, scenery, and timed experiences.</div>
+    </section>
+
+    <section>
+      <h2>瑙勫垝绠€鎶?/h2>
+      <div class='card'><strong>鍥哄畾鏉′欢</strong><div class='list-card'><ul><li>Origin: Sydney</li><li>Duration: 5 days 4 nights</li><li>Must-do: Tasman Island Cruises</li></ul></div></div><div class='card'><strong>鍋忓ソ</strong><div class='list-card'><ul><li>Steady pace</li><li>Self-drive</li><li>One polished final report</li></ul></div></div><div class='card'><strong>鍙皟鏁?/strong><div class='list-card'><ul><li>Hotel category</li><li>Extra scenic stop</li></ul></div></div><div class='card'><strong>鎺掗櫎椤?/strong><div class='list-card'><ul><li>High-risk hikes</li><li>Overloaded one-day loops</li></ul></div></div>
+    </section>
+
+    <section>
+      <h2>鏂规瀵规瘮</h2>
+      <table><thead><tr><th>鏂规</th><th>浼樼偣</th><th>浠ｄ环</th><th>缁撹</th></tr></thead><tbody><tr><td>Hobart return</td><td>Smoothest execution and easiest timed tour day</td><td>Slightly higher airfare</td><td>Recommended</td></tr><tr><td>Launceston return</td><td>Cheaper airfare on some dates</td><td>Worse fit for Tasman Peninsula</td><td>Backup only</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>鏈€缁堣绋?/h2>
+      <div class='card'><strong>Day 1</strong><p>Fly to Hobart, pick up car, light city time.</p></div><div class='card'><strong>Day 2</strong><p>Tasman Island Cruises in the morning, optional Port Arthur after.</p></div><div class='card'><strong>Day 3</strong><p>Drive to Freycinet and continue to Bicheno.</p></div><div class='card'><strong>Day 4</strong><p>Return to Hobart with city time in the evening.</p></div><div class='card'><strong>Day 5</strong><p>Flexible Hobart morning, then fly back to Sydney.</p></div>
+    </section>
+
+    <section>
+      <h2>棰勭畻</h2>
+      <table><thead><tr><th>椤圭洰</th><th>閲戦</th><th>璇存槑</th></tr></thead><tbody><tr><td>Flights</td><td>A$540-A$640</td><td>2 adults rough estimate</td></tr><tr><td>Hotels</td><td>A$510-A$620</td><td>4 nights</td></tr><tr><td>Car + fuel</td><td>A$260-A$360</td><td>Economy car plus fuel</td></tr><tr><td>Core activities</td><td>A$534</td><td>Tasman Island Cruises + Port Arthur + park pass</td></tr></tbody></table>
+    </section>
+
+    <section>
+      <h2>澶囬€夋柟妗?/h2>
+      <div class="card">If Tasman Island Cruises is unavailable, keep Hobart return and replace the timed tour with Port Arthur plus Tasman Peninsula viewpoints.</div>
+    </section>
+
+    <section>
+      <h2>鏉ユ簮</h2>
+      <div class='card'><ul><li><a href='https://www.trip.com/'>Trip.com flights</a></li><li><a href='https://www.tasmancruises.com.au/'>Tasman Island Cruises</a></li><li><a href='https://parks.tas.gov.au/'>Tasmania Parks</a></li></ul></div>
+    </section>
+  </main>
+</body>
+</html>
