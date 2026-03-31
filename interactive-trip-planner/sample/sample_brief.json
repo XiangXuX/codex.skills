@@ -1,0 +1,102 @@
+{
+    "report_title":  "Sample Trip Planning Report",
+    "report_subtitle":  "Example output for the interactive-trip-planner scaffold.",
+    "origin":  "Sydney",
+    "dates":  "2026-04-09 to 2026-04-13",
+    "party_size":  "2 adults",
+    "transport_style":  "Flight + self-drive",
+    "recommendation_summary":  "Recommend Hobart return with one east coast overnight because it balances logistics, scenery, and timed experiences.",
+    "planning_brief":  {
+                           "fixed":  [
+                                         "Origin: Sydney",
+                                         "Duration: 5 days 4 nights",
+                                         "Must-do: Tasman Island Cruises"
+                                     ],
+                           "preferred":  [
+                                             "Steady pace",
+                                             "Self-drive",
+                                             "One polished final report"
+                                         ],
+                           "flexible":  [
+                                            "Hotel category",
+                                            "Extra scenic stop"
+                                        ],
+                           "excluded":  [
+                                            "High-risk hikes",
+                                            "Overloaded one-day loops"
+                                        ]
+                       },
+    "options":  [
+                    {
+                        "name":  "Hobart return",
+                        "strengths":  "Smoothest execution and easiest timed tour day",
+                        "tradeoffs":  "Slightly higher airfare",
+                        "verdict":  "Recommended"
+                    },
+                    {
+                        "name":  "Launceston return",
+                        "strengths":  "Cheaper airfare on some dates",
+                        "tradeoffs":  "Worse fit for Tasman Peninsula",
+                        "verdict":  "Backup only"
+                    }
+                ],
+    "itinerary_days":  [
+                           {
+                               "title":  "Day 1",
+                               "body":  "Fly to Hobart, pick up car, light city time."
+                           },
+                           {
+                               "title":  "Day 2",
+                               "body":  "Tasman Island Cruises in the morning, optional Port Arthur after."
+                           },
+                           {
+                               "title":  "Day 3",
+                               "body":  "Drive to Freycinet and continue to Bicheno."
+                           },
+                           {
+                               "title":  "Day 4",
+                               "body":  "Return to Hobart with city time in the evening."
+                           },
+                           {
+                               "title":  "Day 5",
+                               "body":  "Flexible Hobart morning, then fly back to Sydney."
+                           }
+                       ],
+    "budget_items":  [
+                         {
+                             "name":  "Flights",
+                             "value":  "A$540-A$640",
+                             "note":  "2 adults rough estimate"
+                         },
+                         {
+                             "name":  "Hotels",
+                             "value":  "A$510-A$620",
+                             "note":  "4 nights"
+                         },
+                         {
+                             "name":  "Car + fuel",
+                             "value":  "A$260-A$360",
+                             "note":  "Economy car plus fuel"
+                         },
+                         {
+                             "name":  "Core activities",
+                             "value":  "A$534",
+                             "note":  "Tasman Island Cruises + Port Arthur + park pass"
+                         }
+                     ],
+    "backup_plan":  "If Tasman Island Cruises is unavailable, keep Hobart return and replace the timed tour with Port Arthur plus Tasman Peninsula viewpoints.",
+    "sources":  [
+                    {
+                        "label":  "Trip.com flights",
+                        "url":  "https://www.trip.com/"
+                    },
+                    {
+                        "label":  "Tasman Island Cruises",
+                        "url":  "https://www.tasmancruises.com.au/"
+                    },
+                    {
+                        "label":  "Tasmania Parks",
+                        "url":  "https://parks.tas.gov.au/"
+                    }
+                ]
+}
