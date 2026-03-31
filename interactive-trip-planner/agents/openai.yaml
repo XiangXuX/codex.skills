@@ -1,0 +1,8 @@
+interface:
+  display_name: "Interactive Trip Planner"
+  short_description: "Plan trips through guided tradeoffs, then generate polished itinerary reports."
+  brand_color: "#16544B"
+  default_prompt: "Use $interactive-trip-planner to help me narrow down a trip and then generate an HTML and PDF itinerary report."
+
+policy:
+  allow_implicit_invocation: true
